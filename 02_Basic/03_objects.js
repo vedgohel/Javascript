@@ -39,3 +39,5 @@ JSuser.gretting2 = function(){
 console.log(JSuser.gretting2()); 
 
 // freezing an object prevents new properties from being added, existing properties from being removed, and existing properties from being changed (except for the values of properties that are already writable).
+
+// freezing an object is useful when you want to ensure that the object remains unchanged throughout the program, preventing accidental modifications that could lead to bugs or unexpected behavior.
