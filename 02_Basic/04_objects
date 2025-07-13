@@ -40,7 +40,7 @@ const obj2 = {
 
 const obj3 = {...obj1, ...obj2}; // Merging two objects into one using spread operator
 
-console.log(obj3); // { '1': 'one', '2': 'two', '3': 'three', '4': 'four' }
+// console.log(obj3); // { '1': 'one', '2': 'two', '3': 'three', '4': 'four' }
 
 // const user = {
 //     {
@@ -55,11 +55,28 @@ console.log(obj3); // { '1': 'one', '2': 'two', '3': 'three', '4': 'four' }
 //     }
 // };
 
-// user[0].email
-console.log(tinderUser); // { id: '12345', name: 'John Doe', isLoggedIn: false }
+// // user[0].email
+// console.log(tinderUser); // { id: '12345', name: 'John Doe', isLoggedIn: false }
 
-console.log(Object.keys(tinderUser)); // ['id', 'name', 'isLoggedIn']
-console.log(Object.values(tinderUser)); // ['12345', 'John Doe', false]
-console.log(Object.entries(tinderUser)); // [['id', '12345'], ['name', 'John Doe'], ['isLoggedIn', false]]
+// console.log(Object.keys(tinderUser)); // ['id', 'name', 'isLoggedIn']
+// console.log(Object.values(tinderUser)); // ['12345', 'John Doe', false]
+// console.log(Object.entries(tinderUser)); // [['id', '12345'], ['name', 'John Doe'], ['isLoggedIn', false]]
 
-console.log(Object.hasOwn(tinderUser, "isLoggedIn")); // true
+// console.log(Object.hasOwn(tinderUser, "isLoggedIn")); // true
+
+const course ={
+    courseName: "JavaScript Basics",
+    price : 100,
+    courseInstructor: "Ved "
+
+}
+
+// course.courseInstructor
+
+const {courseInstructor } = course; // Destructuring assignment to extract properties from the course object
+
+console.log(courseInstructor); // "Ved "
+
+{
+
+}
