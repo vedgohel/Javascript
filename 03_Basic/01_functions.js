@@ -41,3 +41,36 @@ console.log(loginUserMessage("Ved")); // calling the function with an argument
 // console.log(loginUserMessage("")); // calling the function with an empty string
 
 console.log(loginUserMessage()); // calling the function without an argument
+
+
+function calculateCartPrice(...num1){
+    return num1 
+}
+
+// console.log(calculateCartPrice(200,400,600));
+
+const user = {
+    userName : "ved",
+    price : 200
+}
+
+function handleObject(anyObject){
+    console.log(`userName is ${anyObject.userName} and price is ${anyObject.price}`)
+}
+
+// handleObject(user)
+
+// handleObject({
+//     userName : "vivek",
+//     prices : 400
+// })
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 400, 600, 1000]));
